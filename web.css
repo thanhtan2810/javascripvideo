@@ -1,0 +1,151 @@
+@import url('./font.css');
+body{ /* phần này viết cho cả trang*/
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;/*border-box: Khi thiết lập giá trị này, thì width và heigh sẽ bao gồm cho cả phần nội dung, padding và border nhưng không bao gồm margin. */
+     overflow: hidden;/*Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi. */
+     
+    }
+
+ nav{ /*phần này viết để thiết lập cho nav */
+    background-color: aqua;   
+    padding: 0 2rem;
+    
+     min-height: 5vh;/*thiết lập chiều cao tối thiểu cho thành phần  */
+    
+}
+a{
+    color: 33CCCC;
+     text-decoration: none;/* lệnh này làm mất dấu gạch dưới chân */
+    font-family: Mansalva;
+}
+.nav-menu{/*phần này viết cho menu theo hàng ngang và vào đc giữa*/
+    display:flex;/*Flexbox là một kiểu dàn trang (layout mode) mà nó sẽ tự cân đối kích thước của các phần tử bên trong để hiển thị trên mọi thiết bị.  */
+ /*sắp xếp Theo hàng ngang (row), các mục linh hoạt sẽ được sắp xếp theo một hàng từ trái qua phải. */
+    justify-content: space-between; /*để cho thanh menu ở không gian giữa*/  
+}
+.nav-items{/*phần này viết cho menu */
+     list-style-type: none;/*xóa bỏ dấu chấm trên thẻ danh sách */
+     display:flex;/* hiễn thị chữ theo chiều ngang*/
+     margin: 0;
+    
+    
+}
+ .nav-band a img{/*viết cho logo  */
+    width: 80px;
+    height: 60px;
+    margin: 15px;
+    position:absolute;
+    left: 60px;
+    display: block;/*Kiểu display: inline-block sẽ được sắp xếp giống với kiểu display: inline, nghĩa là các items sẽ được xếp cùng nhau trên một dòng . Tuy nhiên các items sẽ có thuộc tính của display: block như là có set width, height, margin, padding đủ 4 hướng.*/
+}
+.nav-link{ /*viết cho danh sách của thẻ li*/
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;/*position relative: Giá trị này thường được sử dụng để thiết lập vị trí của phần tử mà không gây ảnh hưởng tới việc hiển thị ban đầu cũng như các phần tử khác*/
+    text-decoration: none;
+}
+.nav-link:hover{ /* dùng để sờ vào nó đổi màu */
+    background-color: #33CCCC;
+   
+}
+.nav-link:hover a{
+    color: blue
+}
+.social{
+     padding: 1.4rem 0;
+     display: block;
+}
+.social i{
+    padding: 0.2rem;
+}
+.social i:hover{
+    color: #33CCCC;
+}
+.search{
+    position: absolute;
+    top: 11px;
+    right: 34px;
+    display: inline-block;
+    padding:14px 16px;
+    
+}
+.search-bar{
+    position:absolute;
+    display:none;
+    right:0;
+    top:45px;
+}
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;/* viền 4 góc*/
+    font-size: 16px;
+    outline:none;
+    padding: 12px 14px;
+    transition: width 0.4s ease-in-out;/* chuyển đổi 1 hành động*/
+}
+nav li:hover{
+    color: blue
+}
+.search:hover{
+    color: blue
+    color:black;
+}
+.search:hover .search-bar{
+    display:block;
+}
+form input[type="text"]:focus{
+    width:500px;
+    background-color: 33CCCC;
+}
+/* main */
+#myvideo{
+    min-width: 100%;
+    min-height: 85%;
+    height: auto;
+    width: auto;
+    
+}
+.site-background{
+    text-align: center;
+    color: white;
+}
+.content{
+     position:absolute;/*canh chữ của phần tử con theo phần tử cho */
+    top:50%;
+    margin-top: -105px;
+    color: #f1f1f1;
+    width: 100%;
+}
+
+ h1 h3{
+    margin: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.8rem
+}
+h3{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.8rem;
+}
+h1{
+    font-size: 3.2rem
+}
+.btn{
+    margin: 1.8rem;
+    background: #33CCCC;
+}
+#mybtn{
+    border:none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-family: Mansalva;
+    
+}
+#mybtn:hover{
+     background: transparent;
+     border: 1px solid #33CCCC;
+     color: bisque;
+}
